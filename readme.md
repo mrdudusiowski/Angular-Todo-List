@@ -1,0 +1,5 @@
+- [ ] Stworzenie front end
+- [ ] Stowrzenie listy
+- [ ] Zapis/Odczyt z pliku
+- [ ] Po najechaniu ikona usunięcia
+- [ ] Podział na komponenty
