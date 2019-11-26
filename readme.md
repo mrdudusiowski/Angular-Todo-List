@@ -1,5 +1,5 @@
 - [ ] Stworzenie front end
-- [ ] Stowrzenie listy
-- [ ] Zapis/Odczyt z pliku
+- [x] Stowrzenie listy
 - [ ] Po najechaniu ikona usunięcia
 - [ ] Podział na komponenty
+- [ ] Local storge
