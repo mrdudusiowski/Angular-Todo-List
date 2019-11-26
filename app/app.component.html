@@ -1,0 +1,16 @@
+<div class="title-of-program">
+<p class="title">Moja {{title}}</p>
+</div>
+<div class="list-block">
+  <ul *ngFor="let value of values; index as i; trackBy: trackByFunction" id="to-do-ul-list">
+      <li class="li-value">
+        {{value}}
+        <button id="delete-button" (click)="DeleteFromList(i)">X</button>
+      </li>
+  </ul>
+</div>
+<div class="input-block">
+  <input id="add-value" #holder (change)="onChange($event)" type="text" placeholder="Wpisz wartość">
+  <button id="add-button" (click)="AddToList()">+</button>
+
+</div>
