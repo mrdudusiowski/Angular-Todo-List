@@ -32,11 +32,28 @@ export class AppComponent {
   DeleteFromList(i){
     this.values.splice(i,1);
     localStorage.removeItem(i.toString());
+
+    var tablica = [];
+    for(var j=localStorage.length-1 ; j>=0; j--) {
+      var key = localStorage.key(j);
+      var value = localStorage[key];
+      tablica[j]=value;
+    }
+    tablica.reverse();
+    localStorage.clear();
+    console.log(tablica[0]);
+    console.log(tablica[1]);
+    console.log("-----");
+    for(var z=0; z<tablica.length; z++){
+      localStorage.setItem(z.toString(), tablica[z]);
+      console.log(localStorage);
+    }
+
   }
 
 
   LoadStorage(){
-    for(var i=0, len=localStorage.length; i<len; i++) {
+    for(var i=localStorage.length-1, len=localStorage.length; i>=0; i--) {
           var key = localStorage.key(i);
           var value = localStorage[key];
           console.log(key + " ====> " + value);
