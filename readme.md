@@ -1,5 +1,5 @@
 - [ ] Stworzenie front end
 - [x] Stowrzenie listy
-- [ ] Po najechaniu ikona usunięcia
+- [x] Po najechaniu ikona usunięcia
 - [ ] Podział na komponenty
 - [ ] Local storge
