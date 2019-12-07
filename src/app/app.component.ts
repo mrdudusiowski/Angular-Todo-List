@@ -7,7 +7,7 @@ import { HAMMER_LOADER } from '@angular/platform-browser';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'inteligentna lista';
+  title = 'inteligent list';
   value = '';
   values = [];
 
@@ -17,8 +17,12 @@ export class AppComponent {
   }
 
   AddToList(){
+    if(this.value!=''){
     this.values.push(this.value);
     this.value='';
+    }else{
+      console.log("Input can't be empty");
+    }
   }
 
   DeleteFromList(i){

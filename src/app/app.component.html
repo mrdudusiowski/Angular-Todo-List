@@ -1,16 +1,25 @@
-<div class="title-of-program">
-<p class="title">Moja {{title}}</p>
+<div class="row justify-content-md-center">
+  <div class="title-of-program col-md-6 col-lg-6">
+   My {{title}}
+  </div>
 </div>
-<div class="list-block">
-  <ul *ngFor="let value of values; index as i; trackBy: trackByFunction" id="to-do-ul-list">
-      <li class="li-value">
-        {{value}}
-        <button id="delete-button" (click)="DeleteFromList(i)">X</button>
-      </li>
-  </ul>
-</div>
-<div class="input-block">
-  <input id="add-value" #holder (change)="onChange($event)" type="text" placeholder="Wpisz wartość">
-  <button id="add-button" (click)="AddToList()">+</button>
-
+<div class="row justify-content-md-center">
+  <div class="col-sm-12 col-md-6 col-lg-6">
+      <div class="list-block">
+            <ul class="list-group" *ngFor="let value of values; index as i; trackBy: trackByFunction" id="to-do-ul-list" >
+                <li class="li-value list-group-item active">
+                  {{value}}
+                  <button class="delete-button btn btn-danger" (click)="DeleteFromList(i)">X</button>
+                </li>
+            </ul>
+      </div>
+      <div class="input-block">
+          <div class="block-float-left col-sm-10 col-md-10 col-lg-10">
+            <input  class="form-control" id="add-value" #holder (change)="onChange($event)" type="text" placeholder="Insert Value">
+          </div>
+          <div class="block-float-left col-sm-2 col-md-2 col-lg-2">
+            <button class="btn btn-primary" id="add-button" (click)="AddToList()">Submit</button>
+          </div>
+      </div>
+  </div>
 </div>
