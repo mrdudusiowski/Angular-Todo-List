@@ -1,7 +1,17 @@
 .title-of-program{
+    font-family: 'Roboto', sans-serif;
+    font-size: 90px;
+    margin-top: 4%;
+    margin-bottom: 4%;
     text-align: center;
-    font-size: 3em;
-    margin-bottom: 50px;
+    color: #24263e82;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.list-group-item.active, .btn-primary {
+background-color: #393d76 !important;
+border-color: #393d76 !important;
 }
 
 .list-block{
