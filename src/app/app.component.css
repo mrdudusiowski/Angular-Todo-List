@@ -13,8 +13,14 @@
     display: none;
 }
 
+.input-block{
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
 .block-float-left{
     float: left;
+    text-align: center;
 }
 
 ul li{

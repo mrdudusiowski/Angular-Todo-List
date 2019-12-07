@@ -1,3 +1,4 @@
+
 <div class="row justify-content-md-center">
   <div class="title-of-program col-md-6 col-lg-6">
    My {{title}}
@@ -20,6 +21,12 @@
           <div class="block-float-left col-sm-2 col-md-2 col-lg-2">
             <button class="btn btn-primary" id="add-button" (click)="AddToList()">Submit</button>
           </div>
+      </div>
+      <div class="block-float-left col-sm-6 col-md-6 col-lg-6">
+          <button class="btn btn-danger" (click)="LoadStorage()">Load Storage</button>
+      </div>
+      <div class="block-float-left col-sm-6 col-md-6 col-lg-6">
+          <button class="btn btn-danger" (click)="ClearStorage()">Clear Storage</button>
       </div>
   </div>
 </div>
