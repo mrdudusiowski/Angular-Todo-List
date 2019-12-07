@@ -18,6 +18,7 @@ export class AppComponent {
   }
 
   AddToList(){
+    this.count=localStorage.length;
     if(this.value!=''){
       this.values.push(this.value);
       localStorage.setItem(this.count.toString(), this.value);
@@ -41,12 +42,8 @@ export class AppComponent {
     }
     tablica.reverse();
     localStorage.clear();
-    console.log(tablica[0]);
-    console.log(tablica[1]);
-    console.log("-----");
     for(var z=0; z<tablica.length; z++){
       localStorage.setItem(z.toString(), tablica[z]);
-      console.log(localStorage);
     }
 
   }
@@ -56,7 +53,6 @@ export class AppComponent {
     for(var i=localStorage.length-1, len=localStorage.length; i>=0; i--) {
           var key = localStorage.key(i);
           var value = localStorage[key];
-          console.log(key + " ====> " + value);
           if(value != ''){
           this.values.push(value);
           }
@@ -69,4 +65,7 @@ export class AppComponent {
     console.log("LocalStorge is clear!");
   }
   
+  ngOnInit() {
+    this.LoadStorage();
+  }
 }
