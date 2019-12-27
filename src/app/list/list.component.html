@@ -1,0 +1,8 @@
+<div class="list-block">
+    <ul class="list-group" *ngFor="let value of values; index as i; trackBy: trackByFunction" id="to-do-ul-list" >
+        <li class="li-value list-group-item active">
+          {{value}}
+          <button class="delete-button btn btn-danger" (click)="DeleteFromList(i)">X</button>
+        </li>
+    </ul>
+</div>

@@ -9,20 +9,6 @@
     text-transform: uppercase;
 }
 
-.list-group-item.active, .btn-primary {
-background-color: #393d76 !important;
-border-color: #393d76 !important;
-}
-
-.list-block{
-    margin-bottom: 50px;
-}
-
-.delete-button{
-    float: right;
-    display: none;
-}
-
 .input-block{
     overflow: hidden;
     margin-bottom: 20px;
@@ -31,13 +17,4 @@ border-color: #393d76 !important;
 .block-float-left{
     float: left;
     text-align: center;
-}
-
-ul li{
-    font-size: 25px;
-    margin-bottom: 2px;
-}
-
-ul li:hover > .delete-button{
-    display: inline-block;
 }
