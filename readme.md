@@ -1,5 +1,5 @@
 - [X] Stworzenie front end
 - [X] Stowrzenie listy
 - [X] Po najechaniu ikona usunięcia
-- [ ] Podział na komponenty - przerzucenie Input + przycisk do innego komponentu
+- [x] Podział na komponenty - przerzucenie Input + przycisk do innego komponentu
 - [X] Local storge
